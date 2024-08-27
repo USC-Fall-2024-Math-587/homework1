@@ -1,7 +1,5 @@
 ## Homework 1
 
-## Homework 1
-
 This week we have a written part and an implementation part.
 
 ### Written part
