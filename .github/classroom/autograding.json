@@ -13,7 +13,7 @@
       {
         "name": "Enciphering test 1",
         "setup": "",
-        "run": "HOME='/home/runner' lake test -- test1",
+        "run": "lake test -- test1",
         "input" : "",
         "timeout": 5,
         "points": 1
@@ -21,7 +21,7 @@
       {
         "name": "Enciphering test 2",
         "setup": "",
-        "run": "HOME='/home/runner' lake test -- test2",
+        "run": "lake test -- test2",
         "input" : "",
         "timeout": 5,
         "points": 1
@@ -29,7 +29,7 @@
       {
         "name": "Enciphering test 3",
         "setup": "",
-        "run": "HOME='/home/runner' lake test -- test3",
+        "run": "lake test -- test3",
         "input" : "",
         "timeout": 5,
         "points": 1
@@ -37,7 +37,7 @@
       {
         "name": "Enciphering test 4",
         "setup": "",
-        "run": "HOME='/home/runner' lake test -- test4",
+        "run": "lake test -- test4",
         "input" : "",
         "timeout": 5,
         "points": 1
