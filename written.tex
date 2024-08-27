@@ -1,0 +1,124 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{caution}[theorem]{Caution}
+
+\begin{document}
+
+\title{Homework 1}
+
+\maketitle
+
+For this week, please answer the following questions from the text. 
+I've copied the problem itself below and the question numbers for 
+your convenience. 
+
+\begin{enumerate}
+	\item (1.2) Decrypt each of the following Caesar encryptions by trying the various 
+		possible shifts until you obtain readable text.
+		\begin{itemize}
+			\item \texttt{LWKLQNWKDWLVKDOOQHYHUVHHDELOOERDUGORYHOBDVDWUHH}
+			\item \texttt{UXENRBWXCUXENFQRLQJUCNABFQNWRCJUCNAJCRXWORWMB}
+			\item \texttt{BGUTBMBGZTFHNLXMKTIPBMAVAXXLXTEPTRLEXTOXKHHFYHKMAXFHNLX}
+		\end{itemize}
+	\item (1.3) Use the simple substitution table below
+	\begin{center}
+		\begin{tabular}{|c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c| c| c|}
+			\hline
+			a & b & c & d & e & f & g & h & i & j & k & l & m & n & o & 
+			p & q & r & s & t & u & v & w & x & y & z \\
+			\hline
+			S & C & J & A & X & U & F & B & Q & K & T & P & R & W & E & 
+			Z & H & V & L & I & G & Y & D & N & M & O \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\begin{enumerate}
+		\item Encrypt the plaintext message
+		\begin{center}
+			\texttt{The gold is hidden in the garden.}
+		\end{center}
+		\item Make a decryption table, that is, make a table in which the ciphertext 
+			alphabet is in order from A to Z and the plaintext alphabet is mixed up.
+		\item Use your decryption table from (b) to decrypt the following message.
+		\begin{center}
+			\texttt{IBXLX JVXIZ SLLDE VAQLL DEVAU QLB}
+		\end{center}
+	\end{enumerate}
+\item (1.4.c) Each of the following messages has been encrypted using a simple
+	substitution cipher. Decrypt them. For your convenience, we have given
+	you a frequency table and a list of the most common bigrams that appear
+	in the ciphertext. (If you do not want to recopy the ciphertexts by
+	hand, they can be downloaded or printed from the web site listed in the
+	preface.) In order to make this one a bit more challenging, we have
+	removed all occurrences of the word “the” from the plaintext. 
+
+	“A Brilliant Detective”
+	\begin{center}
+		\ttfamily
+		GSZES GNUBE SZGUG SNKGX CSUUE QNZOQ EOVJN VXKNG XGAHS AWSZZ
+		BOVUE SIXCQ NQESX NGEUG AHZQA QHNSP CIPQA OIDLV JXGAK CGJCG
+		SASUB FVQAV CIAWN VWOVP SNSXV JGPCV NODIX GJQAE VOOXC SXXCG
+		OGOVA XGNVU BAVKX QZVQD LVJXQ EXCQO VKCQG AMVAX VWXCG OOBOX
+		VZCSO SPPSN VAXUB DVVAX QJQAJ VSUXC SXXCV OVJCS NSJXV NOJQA
+		MVBSZ VOOSH VSAWX QHGMV GWVSX CSXXC VBSNV ZVNVN SAWQZ ORVXJ
+		CVOQE JCGUW NVA
+	\end{center}
+		
+	The ciphertext contains $313$ letters. Here is a frequency table: 
+	\begin{center}
+		\ttfamily
+		\begin{tabular}{|c||c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c |c| c| c|}
+			\hline
+			& V & S & X & G & A & O & Q & C & N & J & U & Z & E & W
+			& B & P & I & H & K & D & M & L & R & F \\
+			\hline
+			Freq  & 39 & 29 & 29 & 22 & 21 & 21 & 20 & 20 & 19 & 13
+			      & 11 & 11 & 10 & 8 & 8 & 6 & 5 & 5 & 5 & 4 & 3 &
+			2 & 1 & 1 \\
+			\hline
+		\end{tabular}
+	\end{center}
+
+	The most frequent bigrams are: \texttt{XC} (10 times), \texttt{NV} (7
+	times), and \texttt{CS}, \texttt{OV}, \texttt{QA}, and \texttt{SX} (6
+	times each).	
+		
+	\item (1.5) Suppose that you have an alphabet of 26 letters.
+		\begin{enumerate}
+			\item  How many possible simple substitution ciphers are there?
+			\item  A letter in the alphabet is said to be fixed if the encryption of the letter is the
+				letter itself. How many simple substitution ciphers are there that leave:
+			\begin{enumerate}
+				\item No letters fixed?
+				\item At least one letter fixed?
+				\item Exactly one letter fixed?
+				\item At least two letters fixed?
+			\end{enumerate}
+			(Part (b) is quite challenging! You might try doing the problem first with an alphabet 
+			of four or five letters to get an idea of what is going on.)
+		\end{enumerate}
+\end{enumerate}
+
+\end{document}
