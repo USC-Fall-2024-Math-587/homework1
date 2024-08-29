@@ -22,7 +22,7 @@ Remove the sorries in `hw.lean` to pass the tests. There are more detailed instr
 
 Bonus points: create `better.lean` and have it (maybe)
 - prompt the user for the desired shift
-- use a custom substition table
+- use a custom substitution table
 - check if a phrase is encoded via Caesar cipher
 - properly sanitize the user input
 
