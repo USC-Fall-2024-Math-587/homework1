@@ -87,7 +87,7 @@ def Alphabet.shift (a : Alphabet) (n : Nat) : Alphabet :=
   -- We can use `have` but the Lean only remembers the type and not the actual term
   -- `have`'s are useful for proofs
   have valid : shifted.isValidChar := sorry -- `by omega` will work with the correct `shifted`
-  -- `omega` is a tactic that can solve linear arithmetic problemes for natural numbers and
+  -- `omega` is a tactic that can solve linear arithmetic problems for natural numbers and
   -- integers
   { char := Char.ofNatAux shifted valid,
     isUpperCase := by -- `by` enters tactic mode to provide a proof
@@ -103,4 +103,3 @@ each one, and then converting the list back to a string.
 -/
 def encode (s : String) (n : Nat) : String :=
   toString (s.toAlphabetList.map fun a => a.shift n)
-
